@@ -12,8 +12,7 @@ check_root() {
 
 install_haproxy() {
     echo "Installing HAProxy..."
-    sudo add-apt-repository ppa:vbernat/haproxy-3.0 -y
-    apt-get update && apt-get install -y haproxy
+    apt-get install -y haproxy
     echo "HAProxy installed."
     set_default_config
 }
